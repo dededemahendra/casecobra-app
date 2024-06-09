@@ -1,5 +1,5 @@
 import React from 'react';
-import MaxWithWrapper from '../common/MaxWithWrapper';
+import MaxWidthWrapper from '../common/MaxWidthWrapper';
 import Link from 'next/link';
 import { buttonVariants } from '../ui/button';
 import { ArrowRight } from 'lucide-react';
@@ -14,7 +14,7 @@ const Navbar = async () => {
 
   return (
     <nav className="sticky z-[100] h-14 inset-x-0 top-0 w-full border-b border-gray-200 bg-white/75 backdrop-blur-lg transition-all">
-      <MaxWithWrapper>
+      <MaxWidthWrapper>
         <div className="flex h-14 items-center justify-between border-b border-zinc-200">
           <Link
             href="/"
@@ -100,7 +100,7 @@ const Navbar = async () => {
             )}
           </div>
         </div>
-      </MaxWithWrapper>
+      </MaxWidthWrapper>
     </nav>
   );
 };

@@ -9,7 +9,7 @@ import {
 import { useInView } from 'framer-motion';
 import { cn } from '@/lib/utils';
 import Phone from './Phone';
-import MaxWithWrapper from '../common/MaxWithWrapper';
+import MaxWidthWrapper from '../common/MaxWidthWrapper';
 
 const PHONES = [
   '/testimonials/1.jpg',
@@ -207,7 +207,7 @@ function ReviewGrid() {
 
 export default function Reviews() {
   return (
-    <MaxWithWrapper className="relative max-w-5xl">
+    <MaxWidthWrapper className="relative max-w-5xl">
       <img
         aria-hidden="true"
         src="/what-people-are-buying.png"
@@ -215,6 +215,6 @@ export default function Reviews() {
       />
 
       <ReviewGrid />
-    </MaxWithWrapper>
+    </MaxWidthWrapper>
   );
 }
